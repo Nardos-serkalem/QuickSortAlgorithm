@@ -4,7 +4,7 @@ quickSortArray :: forall a. Ord a => Array Int a -> Array Int a
 quickSortArray arr = array (l, u) [(i, sorted !! (i - l)) | i <- [l..u]]
   where
     (l, u) = bounds arr
-    sorted = quickSort' (elems arr) --i used to elems to get the list of numbers from the input array
+    sorted = quickSort' (elems arr) --elems to get the list of numbers from the input array
    
 
     quickSort' [] = []
